@@ -1,26 +1,33 @@
-body{
+html {
+    scroll-behavior: smooth !important;
+}
+
+body {
     font-family: 'Fredoka One', cursive;
 }
 
-.perso_bgBlue{
-    background-color:rgb(40,54,69);
-}
-nav a{
-    color:white !important;
-    font-size:25px;
-}
-nav a:hover{
-    color:#FF8000 !important;
+.perso_bgBlue {
+    background-color: rgb(40, 54, 69);
 }
 
-.perso_bgBlueDegrade{
-    background: linear-gradient(rgb(40,54,69), white)
+.perso_bgOrange {
+    background-color: #FF8000;
 }
 
-.perso_colorBlueLight{
-    color : #1490d7 !important;
+nav a {
+    color: white !important;
+    font-size: 25px;
 }
 
-html{
-    scroll-behavior: smooth !important;
+nav a:hover {
+    color: #FF8000 !important;
+}
+
+.perso_bgBlueDegrade {
+    background: linear-gradient(rgb(40, 54, 69), white);
+}
+
+.perso_bgBlueLight {
+    color: #1490d7 !important;
+
 }
