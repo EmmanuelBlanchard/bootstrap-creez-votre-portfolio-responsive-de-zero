@@ -1,5 +1,18 @@
 <?php ob_start(); ?>
 
+<?php 
+if(isset($_POST['mail'])){
+    $to = "tiavine24@hotmail.fr";
+    $from = $_POST['mail'];
+    $object = $_POST['objet'];
+    $message = $_POST['message'];
+    mail($to,$object,$message,$from);
+    ?>
+        <div class="alert alert-success" role="alert">
+            Message envoyé
+        </div>
+<?php } ?>
+
 <div class="container text-center">
     <h2 class="m-5 perso_colorBlueLight">Mes informations personnelles</h2>
     <table class="table table-borderless">
