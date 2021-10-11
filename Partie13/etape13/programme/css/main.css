@@ -1,0 +1,87 @@
+html {
+    scroll-behavior: smooth !important;
+}
+body {
+    font-family: 'Fredoka One', cursive;
+}
+.perso_bgBlue {
+    background-color: rgb(40, 54, 69);
+}
+.perso_bgOrange {
+    background-color: #FF8000;
+}
+nav a {
+    color: white !important;
+    font-size: 25px;
+}
+nav a:hover {
+    color: #FF8000 !important;
+}
+.perso_bgBlueDegrade {
+    background: linear-gradient(rgb(40, 54, 69), white);
+}
+.perso_bgBlueLight {
+    color: #1490d7 !important;
+}
+.navbar-brand {
+    animation-name: brand;
+    animation-duration: 2s;
+    position: relative;
+}
+@keyframes brand {
+    0%{left:-1000px;}
+    100%{left:0px;}
+}
+.navbar-nav {
+    animation-name: link;
+    animation-duration: 2s;
+    position: relative;
+}
+@keyframes link {
+    0%{left:1000px;}
+    100%{left:0px;}
+}
+.boutonTelechargerCV {
+    animation-name: jump;
+    animation-duration: 0.5s;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes jump {
+    0%{
+        transition: all 200ms ease-in;
+        transform: scale(1);
+    }
+    100%{
+        transition: all 200ms ease-in;
+        transform: scale(1.2);
+    }
+}
+.animationTemoignage1 {
+    animation-name: testimonial1;
+    animation-duration: 1s;
+    position: relative;
+}
+@keyframes testimonial1 {
+    0%{left:-1000px;}
+    100%{left:0px;}
+}
+.animationTemoignage2 {
+    animation-name: testimonial2;
+    animation-duration: 1s;
+    position: relative;
+}
+@keyframes testimonial2 {
+    0%{bottom:-100px;}
+    100%{bottom:0px;}
+}
+.animationTemoignage3 {
+    animation-name: testimonial3;
+    animation-duration: 1s;
+    position: relative;
+}
+@keyframes testimonial3 {
+    0%{left:1000px;}
+    100%{left:0px;}
+}
