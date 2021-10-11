@@ -173,6 +173,32 @@
     </div>
 </div>
 
+<div class="container text-center" id="temoignage">
+    <h2 class="m-5 perso_colorBlueLight">Mes témoignages</h2>
+    <div class='row'>
+        <div class="col-12 col-lg-4">
+            <img src="../sources/images/aigle.jpg" class="rounded-circle" style="width:140px;height:140px" />
+            <h3>Client 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ullam atque harum perspiciatis deleniti mollitia fugiat quidem perferendis, 
+                ratione nostrum ex, eum dolore eius quas explicabo alias repellat. Impedit, itaque.
+            </p>
+        </div> <div class="col-12 col-lg-4">
+            <img src="../sources/images/loup.jpg" class="rounded-circle" style="width:140px;height:140px" />
+            <h3>Client 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ullam atque harum perspiciatis deleniti mollitia fugiat quidem perferendis, 
+                ratione nostrum ex, eum dolore eius quas explicabo alias repellat. Impedit, itaque.
+            </p>
+        </div>
+        <div class="col-12 col-lg-4">
+            <img src="../sources/images/chat.jpg" class="rounded-circle" style="width:140px;height:140px" />
+            <h3>Client 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ullam atque harum perspiciatis deleniti mollitia fugiat quidem perferendis, 
+                ratione nostrum ex, eum dolore eius quas explicabo alias repellat. Impedit, itaque.
+            </p>
+        </div>
+    </div>
+</div> 
+
 <?php
     $content = ob_get_clean();
     require "commons/template.php";
