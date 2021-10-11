@@ -2,38 +2,36 @@
 require "../utile/formatage.php";
 ?>
 
-<div id="carouselExampleIndicators" class="carousel slide perso_bgBlueDegrade" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" class="bg-dark" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" class="bg-dark" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" class="bg-dark" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="../sources/images/cours1.png" class="d-block w-75 h-75 mx-auto img-thumbnail border border-dark" alt="...">
-        </div>
-        <div class="carousel-item">
-            <img src="../sources/images/cours3.png" class="d-block w-75 h-75 mx-auto img-thumbnail border border-dark" alt="...">
-        </div>
-        <div class="carousel-item">
-            <img src="../sources/images/catalogue.png" class="d-block w-75 h-75 mx-auto img-thumbnail border border-dark" alt="...">
-        </div>
+<div id="carouselExampleIndicators" class="carousel slide perso_bgBlueDegrade" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="../sources/images/cours1.png" class="d-block w-75 h-75 mx-auto img-thumbnail border border-dark" alt="...">
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
+    <div class="carousel-item">
+        <img src="../sources/images/cours3.png" class="d-block w-75 h-75 mx-auto img-thumbnail border border-dark" alt="...">
+    </div>
+    <div class="carousel-item">
+        <img src="../sources/images/catalogue.png" class="d-block w-75 h-75 mx-auto img-thumbnail border border-dark" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
 
 <div class="text-center mt-3 boutonTelechargerCV">
     <a class="btn perso_bgOrange rounded-pill text-white" href="../sources/pdf/CV.pdf" download="CV-Matthieu">Télécharger mon CV !</a>
 </div>
-
-
 
 <div class="container text-center" id="presentation">
     <?= formatageTitre("Matthieu : Formateur H2PROG"); ?>
@@ -93,7 +91,7 @@ require "../utile/formatage.php";
                 <img src="../sources/images/cours1.png" class="d-block w-100" alt="">
             </div>
             <div class="card-footer bg-transparent border-success">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cours1">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cours1">
                     En savoir plus
                 </button>
             </div>
@@ -104,7 +102,7 @@ require "../utile/formatage.php";
                 <img src="../sources/images/cours3.png" class="d-block w-100" alt="">
             </div>
             <div class="card-footer bg-transparent border-success">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cours3">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cours3">
                     En savoir plus
                 </button>
             </div>
@@ -115,7 +113,7 @@ require "../utile/formatage.php";
                 <img src="../sources/images/catalogue.png" class="d-block w-100" alt="">
             </div>
             <div class="card-footer bg-transparent border-success">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#catalogue">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#catalogue">
                     En savoir plus
                 </button>
             </div>
@@ -129,7 +127,7 @@ require "../utile/formatage.php";
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Cours JavaScript</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -138,7 +136,7 @@ require "../utile/formatage.php";
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, quas similique error facilis fugit culpa beatae, sunt vero voluptatem consequuntur aspernatur nihil debitis nisi asperiores molestias facere, sint nam eum!</p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
             </div>
         </div>
     </div>
@@ -150,7 +148,7 @@ require "../utile/formatage.php";
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Cours PHP</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -159,7 +157,7 @@ require "../utile/formatage.php";
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nemo voluptatibus accusamus officia esse expedita eligendi dolor ea voluptatem, rerum beatae, quibusdam atque. Culpa cupiditate minus reprehenderit dolorem nisi dignissimos.</p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
             </div>
         </div>
     </div>
@@ -171,7 +169,7 @@ require "../utile/formatage.php";
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Cas pratique PHP/MySQL</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -180,7 +178,7 @@ require "../utile/formatage.php";
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, quas similique error facilis fugit culpa beatae, sunt vero voluptatem consequuntur aspernatur nihil debitis nisi asperiores molestias facere, sint nam eum!</p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
             </div>
         </div>
     </div>
