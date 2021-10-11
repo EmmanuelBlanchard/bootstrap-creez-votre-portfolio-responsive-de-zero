@@ -8,4 +8,4 @@ $(window).scroll(function() {
         $(".temoignage2").addClass("animationTemoignage2");
         $(".temoignage3").addClass("animationTemoignage3");
     }
-});  
+});
