@@ -27,6 +27,13 @@
     </a>
 </div>
 
+<div class="container text-center" id="presentation">
+    <h2 class="m-5 perso_colorBlueLight">Matthieu : Formateur H2PROG</h2>
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/ipIQK_pNGyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
 <?php
     $content = ob_get_clean();
     require "commons/template.php";
