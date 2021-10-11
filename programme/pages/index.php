@@ -1,4 +1,6 @@
-<?php ob_start(); ?>
+<?php ob_start(); 
+require "../utile/formatage.php";
+?>
 
 <div id="carouselExampleIndicators" class="carousel slide perso_bgBlueDegrade" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -28,14 +30,14 @@
 </div>
 
 <div class="container text-center" id="presentation">
-    <h2 class="m-5 perso_colorBlueLight">Matthieu : Formateur H2PROG</h2>
+    <?= formatageTitre("Matthieu : Formateur H2PROG"); ?>
     <div class="embed-responsive embed-responsive-16by9">
         <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/ipIQK_pNGyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
 
 <div class="container text-center" id="competences">
-    <h2 class="m-5 perso_colorBlueLight">Mes compétences</h2>
+    <?= formatageTitre("Mes compétences"); ?>
     <div class="row">
         <div class="col-12 col-md-6 col-xl-4 my-4">
             <h3>HTML / CSS</h3>
@@ -77,7 +79,7 @@
 </div>
 
 <div class="container text-center" id="portfolio">
-    <h2 class="m-5 perso_colorBlueLight">Mon Portfolio</h2>
+    <?= formatageTitre("Mon Portfolio"); ?>
     <div class="card-group">
         <div class="card border-success mb-3">
             <div class="card-header bg-transparent border-success">Cours JavaScript</div>
@@ -174,7 +176,7 @@
 </div>
 
 <div class="container text-center" id="temoignage">
-    <h2 class="m-5 perso_colorBlueLight">Mes témoignages</h2>
+    <?= formatageTitre("Mes témoignages"); ?>
     <div class='row'>
         <div class="col-12 col-lg-4">
             <img src="../sources/images/aigle.jpg" class="rounded-circle" style="width:140px;height:140px" />
