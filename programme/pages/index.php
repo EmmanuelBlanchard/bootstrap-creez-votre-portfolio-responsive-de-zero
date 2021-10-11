@@ -29,7 +29,7 @@ require "../utile/formatage.php";
     </a>
 </div>
 
-<div class="text-center mt-3">
+<div class="text-center mt-3 boutonTelechargerCV">
     <a class="btn perso_bgOrange rounded-pill text-white" href="../sources/pdf/CV.pdf" download="CV-Matthieu">Télécharger mon CV !</a>
 </div>
 
@@ -189,17 +189,17 @@ require "../utile/formatage.php";
 <div class="container text-center pt-5" id="temoignages">
     <?= formatageTitre("Mes témoignages"); ?>
     <div class="row">
-        <div class="col-12 col-lg-4">
+        <div class="col-12 col-lg-4 temoignage1">
             <img src="../sources/images/aigle.jpg" class="rounded-circle" style="width:140px;height:140px" alt="">
             <h3>Client 1</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro saepe sed, vitae quaerat excepturi voluptas eveniet sit tempore soluta alias fugit! Maiores dolor magni, cum inventore quia quo at harum!</p>
         </div>
-        <div class="col-12 col-lg-4">
+        <div class="col-12 col-lg-4 temoignage2">
             <img src="../sources/images/loup.jpg" class="rounded-circle" style="width:140px;height:140px" alt="">
             <h3>Client 2</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro saepe sed, vitae quaerat excepturi voluptas eveniet sit tempore soluta alias fugit! Maiores dolor magni, cum inventore quia quo at harum!</p>
         </div>
-        <div class="col-12 col-lg-4">
+        <div class="col-12 col-lg-4 temoignage3">
             <img src="../sources/images/chat.jpg" class="rounded-circle" style="width:140px;height:140px" alt="">
             <h3>Client 3</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro saepe sed, vitae quaerat excepturi voluptas eveniet sit tempore soluta alias fugit! Maiores dolor magni, cum inventore quia quo at harum!</p>
@@ -207,8 +207,7 @@ require "../utile/formatage.php";
     </div>
 </div>
 
-
-
+<script src="../js/main.js"></script>
 
 <?php
     $content = ob_get_clean();
