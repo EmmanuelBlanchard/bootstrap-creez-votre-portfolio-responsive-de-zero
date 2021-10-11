@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark perso_bgBlue">
+<nav class="navbar navbar-expand-xl navbar-dark perso_bgBlue sticky-top">
     <a class="navbar-brand" href="#">@H2PROG - Matthieu</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -13,7 +13,7 @@
                 <a class="nav-link" href="#">Présentation </a>
             </li>
             <li class="nav-item mx-2">
-                <a class="nav-link" href="#">Mon CV </a>
+                <a class="nav-link" href="#">CV </a>
             </li>
             <li class="nav-item mx-2">
                 <a class="nav-link" href="#">Compétences </a>
